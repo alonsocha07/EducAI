@@ -1,0 +1,29 @@
+.asideMenu{
+    padding: 20px;
+    width: 320px;
+    border-right: 3px solid gray;
+    border-left: 3px solid gray;
+}
+.MenuHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.MenuHeader h2{
+    font-size: 2.4rem;
+    margin-left: 8px;
+}
+.asideMenu ul{
+    list-style: none;
+}
+.asideMenu ul li{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+.asideMenu ul li a{
+   text-decoration: none;
+}
+.asideMenu img{
+    width: 50px;
+    height: 50px;
+}
