@@ -16,13 +16,15 @@ function AsideMenu({sections, imgTechnologie, technologieName}) {
              {sections.map((route) => {
             return (
               <li key={route.text}>
-                <NavLink to={route.to}
+                 <NavLink to={route.to}
                 style={({ isActive }) => ({
                     color: isActive ? "red" : "black",
                     marginLeft: route.sub ? "20px" : "",
                     fontWeight: route.title ? "bold" : ""
                   })}
-                >{route.text}</NavLink>
+                >{route.text}</NavLink> 
+
+                {/* <ChatgptLink sections= {route} /> */}
               </li>
             );
           })} 
@@ -31,7 +33,7 @@ function AsideMenu({sections, imgTechnologie, technologieName}) {
   )
 }
 
-function chatgptLink({ sections }) {
+function ChatgptLink({ sections }) {
   return (
     <li>
       <Link to={`/chatgpt/${sections.slug}`}> {sections.text} </Link>

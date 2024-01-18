@@ -12,7 +12,7 @@ function App() {
       <HashRouter>
         <Header></Header>
 
-        <main className="mainContainer">
+        <main>
           <Routes>
             <Route path="/" element={<HomePage />} />
             
