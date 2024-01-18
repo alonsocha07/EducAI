@@ -1,6 +1,6 @@
 
 header{
-    background-color: var(--verde);
+    background-color: var(--black);
   }
   header nav{
     display: flex;
@@ -43,7 +43,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--gris);
+    color: var(--white-text);
   }
   
   header nav ul li a:hover{

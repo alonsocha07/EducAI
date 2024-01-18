@@ -1,0 +1,20 @@
+.HomePageImg{
+    width: 100%;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 1;
+}
+
+.homePageContainer{
+    color: white;
+   
+    text-align: center;
+    z-index: 10;
+    
+}
+h1{
+    font-size: 6.0rem
+}
+h2{
+    font-size: 3.0rem;
+}

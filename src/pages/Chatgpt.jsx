@@ -6,7 +6,7 @@ function Chatgpt() {
     <>
       <div className="gridContainer">
 
-        <AsideMenu sections={sections} technologieName="Chat GPT" imgTechnologie="../../src/assets/openaiLogo.png">Soy aside</AsideMenu>
+        <AsideMenu sections={sections} technologieName="Chat GPT" imgTechnologie="../../src/assets/openAILogo.svg">Soy aside</AsideMenu>
         <div className="sectionRight">
 
           <Outlet/>
@@ -129,6 +129,12 @@ sections.push({
   to: "/chatgpt/tecnica-promt-engineering",
   slug: "tecnica-promt-engineering",
   text: "Técnica promt engineering",
+  title: true
+});
+sections.push({
+  to: "/chatgpt/shots",
+  slug: "shots",
+  text: "Shots",
   sub: true
 });
 

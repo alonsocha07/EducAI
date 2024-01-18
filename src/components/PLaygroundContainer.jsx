@@ -26,7 +26,7 @@ function PLaygroundContainer() {
             <p id="p-respuesta-chatgpt__Introduccion">(Respuesta de ChatGPT)</p>
           </div>
         </div>
-        <button className="botonGPT" id="botonDescripcionGPT" onClick="LlamarDescripcion()">Generar descripción</button>
+        <button className="botonGPT" id="botonDescripcionGPT">Generar descripción</button>
         <br />
         <br />
         <br />

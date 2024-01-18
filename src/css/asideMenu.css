@@ -1,8 +1,9 @@
 .asideMenu{
     padding: 20px;
     width: 320px;
-    border-right: 3px solid gray;
-    border-left: 3px solid gray;
+    border-right: 3px solid var(--bg-pg);
+   
+    color: var(--white-text);
 }
 .MenuHeader {
     display: flex;

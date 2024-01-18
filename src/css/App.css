@@ -1,4 +1,6 @@
-
+main{
+    background-color: #12141a;
+}
 .gridContainer{
     max-width: 1200px;
     display: grid;
@@ -7,7 +9,6 @@
     margin-right: auto;
 }
 .sectionRight{
-    background-color: rgb(235, 197, 197);
+    background-color: var(--bg-black);
     width: 100%; /* O cualquier otro porcentaje que desees */
-    
 }

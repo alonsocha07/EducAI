@@ -15,10 +15,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
 :root{
-    --verde: #2BABAB;
-    --verde-claro: #48d4cb;
-    --gris: #f1f1f1;
-    --negro: #232323;
+  --bg-black: #12141a;
+  --black: #0e1015;
+  --bg-pg: #1e212d;
+  --white-text: #e9e9e9;
+
+  --green: #229f9f;
+  --green-dark: #1f7d7d;
+  --gris: #f1f1f1;
+  --negro: #232323;
 }
 
 *{
