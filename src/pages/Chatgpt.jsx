@@ -1,16 +1,39 @@
+import { Link, Outlet } from "react-router-dom";
 import AsideMenu from "../components/AsideMenu";
 
 function Chatgpt() {
   return (
     <>
-      
+      <div className="gridContainer">
+
         <AsideMenu sections={sections} technologieName="Chat GPT" imgTechnologie="../../src/assets/openaiLogo.png">Soy aside</AsideMenu>
         <div className="sectionRight">
-        fergggggggggggggg hyhhhhhhhhy          uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu             lllllllllllllllllllllll yyyyyyyyyyyyyyyyyyyyyyyyyy eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn gggggggggggggggggggggggggggggg zzzzzzzzzzzzzzzzzzzzzzzz
+         
+       chatgpt  chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt chatgpt
       </div>
+      </div>
+      <Outlet/>
     </>
   );
 }
+
+
+
+// const sections = [];
+// sections.push({
+//   to: "/chatgpt/introduccion",
+//   slug: "introduccion",
+//   text: "Introducción",
+//   sub: false
+// });
+// sections.push({
+//   to: "/chatgpt/precision",
+//   slug: "precision",
+//   text: "Precision",
+//   sub: false
+// });
+
+
 
 const sections = [];
 sections.push({

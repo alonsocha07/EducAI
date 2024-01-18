@@ -1,5 +1,5 @@
 import '../css/asideMenu.css'
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 function AsideMenu({sections, imgTechnologie, technologieName}) {
@@ -10,7 +10,10 @@ function AsideMenu({sections, imgTechnologie, technologieName}) {
             <h2>{technologieName}</h2>
         </div>
         <ul>
-            {sections.map((route) => {
+
+
+
+             {sections.map((route) => {
             return (
               <li key={route.text}>
                 <NavLink to={route.to}
@@ -22,10 +25,18 @@ function AsideMenu({sections, imgTechnologie, technologieName}) {
                 >{route.text}</NavLink>
               </li>
             );
-          })}
+          })} 
         </ul>
     </div>
   )
+}
+
+function chatgptLink({ sections }) {
+  return (
+    <li>
+      <Link to={`/chatgpt/${sections.slug}`}> {sections.text} </Link>
+    </li>
+  );
 }
 
 export default AsideMenu

@@ -3,9 +3,10 @@ import AsideMenu from "../components/AsideMenu"
 function Dalle2() {
     return (
       <>
-      <div className="row">
+       <div className="gridContainer">
+
         <AsideMenu sections={sections} technologieName="Dalle-2" imgTechnologie="../../src/assets/openaiLogo.png">Soy aside</AsideMenu>
-        <div>chatgpt</div>
+        <div className="sectionRight"> Dalle - 2  Dalle - 2 Dalle - 2 Dalle - 2 Dalle - 2 Dalle - 2 Dalle - 2 Dalle - 2 Dalle - 2 Dalle - 2 Dalle - 2 Dalle - 2 Dalle - 2 Dalle - 2 Dalle - 2 Dalle - 2 Dalle - 2 Dalle - 2 Dalle - 2 Dalle - 2</div>
       </div>
       </>
     )

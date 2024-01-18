@@ -1,5 +1,12 @@
 .mainContainer{
     max-width: 1200px;
-    display: flex;
-    justify-content: center;
+   margin-left: auto;
+   margin-right: auto;
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: 320px 1fr;
+}
+.sectionRight{
+    background-color: rgb(235, 197, 197);
 }
