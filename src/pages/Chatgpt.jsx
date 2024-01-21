@@ -29,7 +29,7 @@ function Chatgpt() {
  sections.push({
    to: "/chatgpt/precision",
    slug: "precision",
-   text: "Precision",
+   text: "Precisión",
    sub: false
  });
 
@@ -46,33 +46,33 @@ sections.push({
   sub: false
 });
 sections.push({
-  to: "/chatgpt/informacion-sensible",
-  slug: "informacion-sensible",
-  text: "Informacion Sensible",
+  to: "/chatgpt/informacion_sensible",
+  slug: "informacion_sensible",
+  text: "Información Sensible",
   sub: false
 });
 sections.push({
-  to: "/chatgpt/tips-basicos",
-  slug: "tips-basicos",
-  text: "Tips basicos",
+  to: "/chatgpt/tips_basicos",
+  slug: "tips_basicos",
+  text: "Tips básicos",
   sub: false,
   title: true
 });
 sections.push({
-  to: "/chatgpt/iniciar-sencillo",
-  slug: "iniciar-sencillo",
+  to: "/chatgpt/iniciar_sencillo",
+  slug: "iniciar_sencillo",
   text: "Iniciar sencillo",
   sub: true
 });
 sections.push({
-  to: "/chatgpt/ser-especifico",
-  slug: "ser-específico",
+  to: "/chatgpt/ser_especifico",
+  slug: "ser_específico",
   text: "Ser específico",
   sub: true
 });
 sections.push({
-  to: "/chatgpt/evitar-ambiguedades",
-  slug: "evitar-ambiguedades",
+  to: "/chatgpt/evitar_ambiguedades",
+  slug: "evitar_ambiguedades",
   text: "Evitar ambigüedades",
   sub: true
 });
@@ -83,39 +83,39 @@ sections.push({
   sub: true
 });
 sections.push({
-  to: "/chatgpt/conocer-la-audiencia-objetivo",
-  slug: "conocer-la-audiencia-objetivo",
+  to: "/chatgpt/conocer_la_audiencia_objetivo",
+  slug: "conocer_la_audiencia_objetivo",
   text: "Conocer la audiencia objetivo",
   sub: true
 });
 sections.push({
-  to: "/chatgpt/dar-ejemplo",
-  slug: "dar-ejemplo",
+  to: "/chatgpt/dar_ejemplo",
+  slug: "dar_ejemplo",
   text: "Dar ejemplo",
   sub: true
 });
 sections.push({
-  to: "/chatgpt/errores-comunes",
-  slug: "errores-comunes",
+  to: "/chatgpt/errores_comunes",
+  slug: "errores_comunes",
   text: "Errores comunes",
   sub: false,
   title: true
 });
 sections.push({
-  to: "/chatgpt/texto-demasiado-complejo",
-  slug: "texto-demasiado-complejo",
+  to: "/chatgpt/texto_demasiado_complejo",
+  slug: "texto_demasiado_complejo",
   text: "Texto demasiado complejo",
   sub: true
 });
 sections.push({
-  to: "/chatgpt/jergas-o-ambiguedades",
-  slug: "jergas-o-ambiguedades",
+  to: "/chatgpt/jergas_o_ambiguedades",
+  slug: "jergas_o_ambiguedades",
   text: "Jergas o ambigüedades",
   sub: true
 });
 sections.push({
-  to: "/chatgpt/limitaciones-del-modelo",
-  slug: "limitaciones-del-modelo",
+  to: "/chatgpt/limitaciones_del_modelo",
+  slug: "limitaciones_del_modelo",
   text: "Limitaciones del modelo",
   sub: true
 });
@@ -126,8 +126,8 @@ sections.push({
   sub: true
 });
 sections.push({
-  to: "/chatgpt/tecnica-promt-engineering",
-  slug: "tecnica-promt-engineering",
+  to: "/chatgpt/tecnica_promt_engineering",
+  slug: "tecnica_promt_engineering",
   text: "Técnica promt engineering",
   title: true
 });

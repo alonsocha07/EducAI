@@ -20,7 +20,7 @@
 
 .prompt-container {
     width: 70%;
-    height: 140px;
+    min-height: 140px;
     background: var(--bg-pg);
     border-radius: 10px;
     margin-right: 20px;
