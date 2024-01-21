@@ -1,6 +1,7 @@
-.HomePageImg{
+.main{
     width: 100%;
-    opacity: 0.3;
+    background-image: url('../../assets/astronaut-floating-space.png');
+    
     position: absolute;
     z-index: 1;
 }

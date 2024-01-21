@@ -12,3 +12,48 @@ main{
     background-color: var(--bg-black);
     width: 100%; /* O cualquier otro porcentaje que desees */
 }
+p, li{
+    font-size: 1.8rem;
+    line-height: 1.3;
+}
+span{
+    font-weight: 700;
+    color: var(--green);
+}
+
+li{
+    list-style: none;
+    margin-top: 5px;
+}
+
+
+
+
+
+.blue{
+    color: rgb(57, 71, 200);
+}
+.green{
+    color: #21ba29;
+}
+.brown{
+    color: rgb(163, 99, 50);
+}
+.rose{
+    color: #e76e8c;
+}
+.black{
+    color: var(--negro)
+}
+.red{
+    color: #f13636
+}
+.orange{
+    color: #ff8000;
+}
+.purple{
+    color: #aa07b5;
+}
+.white{
+    color: var(--white-text);
+}

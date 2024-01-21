@@ -8,8 +8,7 @@ function AsideMenu({ sections, imgTechnologie, technologieName }) {
   const green = getComputedStyle(document.documentElement).getPropertyValue(
     "--green"
   );
-  console.log("Color primario:", whiteText);
-  console.log(sections);
+
   return (
     <div className="asideMenu">
       <div className="MenuHeader">
@@ -18,7 +17,6 @@ function AsideMenu({ sections, imgTechnologie, technologieName }) {
       </div>
       <ul>
         {sections.map((route) => {
-          console.log("route", route);
           return (
             <li key={route.text} style={ {marginTop: route.title ? "22px" : ""}}>
 
