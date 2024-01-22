@@ -11,6 +11,17 @@ function PLaygroundContainer() {
   const playground = chatgptPlayground.find((post) => post.slug === slug);
   const [dynamicComponent, setDynamicComponent] = useState(null);
 
+  const p = document.getElementById('prompt')
+  const clickBtn1 = (playground) => {
+    p.innerHTML = playground.prompt
+  };
+  const clickBtn2 = (playground) => {
+    p.innerHTML = playground.prompt2
+  };
+  const clickBtn3 = (playground) => {
+    p.innerHTML = playground.prompt3
+  };
+
   useEffect(() => {
     const loadDynamicComponent = async () => {
       try {
@@ -43,11 +54,28 @@ function PLaygroundContainer() {
         {playground.prompt && (
           <div>
             <div className="playground-container">
+              <div className="buttons-container">
+                {
+                  playground.prompt2 && (
+                    <button className="b-prompt" onClick={() => clickBtn1(playground)}>{playground.b_prompt}</button>
+                  )
+                }
+                {
+                  playground.prompt2 && (
+                    <button className="b-prompt" onClick={() => clickBtn2(playground)}>{playground.b_prompt2}</button>
+                  )
+                }
+                {
+                playground.prompt3 && (
+                    <button className="b-prompt" onClick={() => clickBtn3(playground)}>{playground.b_prompt3}</button>
+                  )
+                }
+              </div>
               <div className="prompt-container">
-                <p dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(playground.prompt) }} ></p>
+                <p dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(playground.prompt) }} id="prompt" ></p>
               </div>
               <div className="respuesta-container">
-                <p id="p-respuesta-chatgpt__Introduccion">
+                <p>
                   (Respuesta de ChatGPT)
                 </p>
               </div>

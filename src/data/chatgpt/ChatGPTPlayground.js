@@ -9,8 +9,11 @@ chatgptPlayground.push({
     title: 'Precisión de la respuesta',
     slug: 'precision',
     prompt: '¿Cuál es la fórmula de la equivalencia entre masa y energía? <span>Respuesta concisa sin explicación</span>',
-    prompt2: '¿Cuál es la fórmula de la equivalencia entre masa y energía? Respuesta resumida',
-    prompt3: '¿Cuál es la fórmula de la equivalencia entre masa y energía? Respuesta de un párrafo',
+    prompt2: '¿Cuál es la fórmula de la equivalencia entre masa y energía? <span>Respuesta resumida</span>',
+    prompt3: '¿Cuál es la fórmula de la equivalencia entre masa y energía? <span>Respuesta de un párrafo</span>',
+    b_prompt: 'Conciso',
+    b_prompt2: 'Resumido',
+    b_prompt3: 'Extennso',
 })
 chatgptPlayground.push({
     title: 'Estructura de un prompt?',
@@ -40,7 +43,10 @@ chatgptPlayground.push({
     slug: 'iniciar_sencillo',
     prompt: 'Escribe una receta de pasta',
     prompt2: 'Eres un chef italiano. Crea una receta original de pasta con ingredientes tradicionales italianos',
-    prompt3: 'Eres un chef italiano. Crea una receta original de pasta con ingredientes tradicionales italianos y que sea fácil de preparar en casa para alguien que no es experto en cocina. Lista de los pasos numerables'
+    prompt3: 'Eres un chef italiano. Crea una receta original de pasta con ingredientes tradicionales italianos y que sea fácil de preparar en casa para alguien que no es experto en cocina. Lista de los pasos numerables',
+    b_prompt: 'Paso 1',
+    b_prompt2: 'Paso 2',
+    b_prompt3: 'Paso 3',
 })
 chatgptPlayground.push({
     title: 'Ser específico',
@@ -103,7 +109,10 @@ chatgptPlayground.push({
     slug: 'shots',
     prompt: 'Diseña 10 preguntas de deletreo para un niño de 7 años',
     prompt2:'Diseña 10 preguntas de deletreo para un niño de 7 años, sigue el siguiente ejemplo: Como se escribe la palabra del animal que ladra',
-    prompt3:'Te voy a pasar una serie de ejemplos de notas de estudiantes y vas a tener que responder de una manera parecida basado en los ejemplos. Ejemplo 1:Nota de 90 a 100, Felicidades!!!! Aprobaste con un nota increíble, te deseo los mejores exitos. Ejemplo 2: Nota 70 a 90< Pasaste el curso, Suerte en los siguientes. Ejemplo 3: Nota inferior a 70, Lo intentaste pero no lo conseguiste, sigue estudiando y seguro apruebas la proxima. Si el estudiante obtuvo 78, Cual seria tu respuesta?    '
+    prompt3:'Te voy a pasar una serie de ejemplos de notas de estudiantes y vas a tener que responder de una manera parecida basado en los ejemplos. Ejemplo 1:Nota de 90 a 100, Felicidades!!!! Aprobaste con un nota increíble, te deseo los mejores exitos. Ejemplo 2: Nota 70 a 90< Pasaste el curso, Suerte en los siguientes. Ejemplo 3: Nota inferior a 70, Lo intentaste pero no lo conseguiste, sigue estudiando y seguro apruebas la proxima. Si el estudiante obtuvo 78, Cual seria tu respuesta?',
+    b_prompt: 'Zero-Shot',
+    b_prompt2: 'One-Shot',
+    b_prompt3: 'Few-Shot',
 })
 
 export {chatgptPlayground}
