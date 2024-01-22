@@ -59,7 +59,7 @@
     margin-bottom: 30px;
 }
 .botonGPT:hover {
-    background-color: var(--green-dark);/* Green background */
+    background-color: var(--green-dark);
     border: none;
     color: white;
     padding: 12px 16px;

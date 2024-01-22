@@ -1,17 +1,26 @@
-.main{
-    width: 100%;
-    background-image: url('../../assets/astronaut-floating-space.png');
-    
-    position: absolute;
-    z-index: 1;
-}
-
 .homePageContainer{
-    color: white;
-   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 580px;
+
+    color: white;  
     text-align: center;
-    z-index: 10;
-    
+    padding: 0px 10px 0px 10px;
+}
+.homePageContainer button{
+    margin-top: 45px;
+    width: 150px;
+    height: 40px;
+    background-color: var(--green);
+    border-style: none;
+    border-radius: 10px;
+    color: var(--white-text);
+    font-size: 1.6rem;
+}
+.homePageContainer button:hover {
+    background-color: var(--green-dark);
+    cursor: pointer;
 }
 h1{
     font-size: 6.0rem

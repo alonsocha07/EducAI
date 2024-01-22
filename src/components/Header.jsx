@@ -17,8 +17,13 @@ function Header() {
         <ul>
           {routes.map((route) => {
             return (
-              <li key={route.text}>
-                <NavLink to={route.to}>{route.text}</NavLink>
+              <li key={route.text} >
+                <NavLink 
+                to={route.to}
+                style={({ isActive }) => ({
+                   borderBottom: isActive ? "1px solid #1f816f" : ""
+                })}
+                >{route.text}</NavLink>
               </li>
             );
           })}
@@ -35,7 +40,7 @@ routes.push({
   private: false,
 });
 routes.push({
-  to: "/chatgpt",
+  to: "/chatgpt/introduccion",
   text: "Chat GPT",
   private: false,
 });
