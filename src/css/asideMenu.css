@@ -1,8 +1,9 @@
 .asideMenu{
     padding: 20px;
-    width: 320px;
+    width: 315px;
     border-right: 3px solid var(--bg-pg);
     color: var(--white-text);
+   
 }
 .MenuHeader {
     display: flex;
@@ -28,8 +29,23 @@
     height: 50px;
 }
 
-@media only screen and (max-width: 950px) {
-    .asideMenu{
-        margin-left: 150px;
-    }
+.arrowContainer{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 50px;
+    background-color: var(--bg-aside);
+    border-radius: 70px;
+    border: 2px solid #242a3d;
+    opacity: 0.6;
+}
+
+.MoveLeftMenu{
+    transform: translateX(-305px);
+    transition: transform 0.6s ease;
+}
+.MoveRightMenu{
+    
+    transition: transform 0.6s ease;
 }

@@ -10,7 +10,8 @@ main{
 }
 .sectionRight{
     background-color: var(--bg-black);
-    width: 100%; /* O cualquier otro porcentaje que desees */
+    width: 100%; 
+    min-height: 810px;
 }
 p, li{
     font-size: 1.8rem;
@@ -56,4 +57,28 @@ li{
 }
 .white{
     color: var(--white-text);
+}
+
+
+@media only screen and (max-width: 950px) {
+    .gridContainer{
+        display: block;
+        position: relative;
+    }
+    .gridContainer .asideMenu{
+        position: absolute;
+        background-color: var(--bg-aside);
+        border-right: 1px solid var(--bg-pg);
+        top: 0;
+        bottom: 0;
+    }
+    .gridContainer .arrowContainer{
+        display: flex;
+        position: absolute;
+        right: -12%;
+        top: 300px;
+    }
+    .sectionRight{
+        margin-left: 10px;
+    }
 }

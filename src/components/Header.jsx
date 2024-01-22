@@ -8,7 +8,7 @@ function Header() {
         <div className="header-image-container">
         <NavLink to="/">
             <img
-              src="../../src/assets/marca/Educai-logo2.jpg"
+              src="../../src/assets/course.svg"
               alt="EducAI logo"
               />
         </NavLink>

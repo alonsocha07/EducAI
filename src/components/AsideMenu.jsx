@@ -1,7 +1,9 @@
+import { useState } from "react";
 import "../css/asideMenu.css";
 import { Link, NavLink } from "react-router-dom";
 
 function AsideMenu({ sections, imgTechnologie, technologieName }) {
+  const [arrow, setArrow] = useState('../../src/assets/arrowLeft.svg')
   const whiteText = getComputedStyle(document.documentElement).getPropertyValue(
     "--white-text"
   );
@@ -9,8 +11,29 @@ function AsideMenu({ sections, imgTechnologie, technologieName }) {
     "--green"
   );
 
+  
+  function handleMenu(){
+    const aMenu = document.getElementById("asideMenu");
+
+    if (aMenu.classList.contains('MoveLeftMenu')) {
+
+      aMenu.classList.remove('MoveLeftMenu');
+      aMenu.classList.add('MoveRightMenu');
+      setArrow('../../src/assets/arrowRight.svg')
+    } else {
+      aMenu.classList.add('MoveLeftMenu');
+      setArrow('../../src/assets/arrowLeft.svg')
+    }
+    
+  }
+
   return (
-    <div className="asideMenu">
+    <div className="asideMenu" id="asideMenu">
+      <div className="arrowContainer" onClick={handleMenu}>
+        <div>
+          <img src={arrow} alt="arrow" />
+        </div>
+      </div>
       <div className="MenuHeader">
         <img src={imgTechnologie} alt="Technologie image" />
         <h2>{technologieName}</h2>
@@ -18,7 +41,11 @@ function AsideMenu({ sections, imgTechnologie, technologieName }) {
       <ul>
         {sections.map((route) => {
           return (
-            <li key={route.text} style={ {marginTop: route.title ? "22px" : ""}}>
+            <li 
+            key={route.text} 
+            style={ {marginTop: route.title ? "22px" : ""}}
+            onClick= {() => window.innerWidth < 950 && handleMenu()}
+            >
 
               <NavLink
                 to={route.to}
