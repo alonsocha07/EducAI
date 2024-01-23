@@ -13,13 +13,9 @@ header{
     margin-left: auto;
     margin-right: auto;
   }
-  .header-image-container{
-    width: 95px;
-    height: 95px;
-  }
   .header-image-container img{
-    width: 95px;
-    height: 95px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
   }
   header nav ul{
