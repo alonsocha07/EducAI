@@ -5,6 +5,10 @@ import DOMPurify from 'dompurify';
 import "../css/playground.css";
 import { useEffect, useState } from "react";
 
+const Introduccion = await import(`/src/components/chatgpt/Introduccion.jsx`);
+const Precision = await import(`/src/components/chatgpt/precision.jsx`);
+
+
 function PLaygroundContainer() {
   const { slug } = useParams();
 
@@ -25,9 +29,13 @@ function PLaygroundContainer() {
   useEffect(() => {
     const loadDynamicComponent = async () => {
       try {
-        const module = await import(`/src/components/chatgpt/${slug}.jsx`);
-
-        const DynamicComponent = module.default;
+        let DynamicComponent
+        if (slug == 'Introduccion') {
+          DynamicComponent = Introduccion.default
+        }
+        if (slug == 'Precision') {
+          DynamicComponent = Precision.default
+        }
 
         setDynamicComponent(<DynamicComponent />);
 

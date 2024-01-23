@@ -1,4 +1,4 @@
-function precision() {
+function Precision() {
   return (
     <div>
         <p>Interesante... ¿Verdad?</p>
@@ -11,4 +11,4 @@ function precision() {
   )
 }
 
-export default precision
+export default Precision
