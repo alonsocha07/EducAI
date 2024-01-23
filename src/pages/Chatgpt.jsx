@@ -21,14 +21,14 @@ function Chatgpt() {
 
  const sections = [];
  sections.push({
-   to: "/chatgpt/introduccion",
+   to: "/chatgpt/gpt_introduccion",
    slug: "introduccion",
    text: "Introducción",
    sub: false
  });
  sections.push({
-   to: "/chatgpt/precision",
-   slug: "precision",
+   to: "/chatgpt/gpt_precision",
+   slug: "gpt_precision",
    text: "Precisión",
    sub: false
  });

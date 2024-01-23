@@ -1,13 +1,9 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { chatgptPlayground } from "../data/chatgpt/ChatGPTPlayground";
 import DOMPurify from 'dompurify';
 
 import "../css/playground.css";
 import { useEffect, useState } from "react";
-
-const Introduccion = await import(`/src/components/chatgpt/Introduccion.jsx`);
-const Precision = await import(`/src/components/chatgpt/Precision.jsx`);
-
 
 function PLaygroundContainer() {
   const { slug } = useParams();
@@ -29,6 +25,7 @@ function PLaygroundContainer() {
   useEffect(() => {
     const loadDynamicComponent = async () => {
       try {
+        console.log('module', `./chatgpt/${slug}`);
         const module = await import(`./chatgpt/${slug}`);
 
         const DynamicComponent = module.default;
