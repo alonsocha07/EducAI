@@ -3,7 +3,7 @@ import "../css/asideMenu.css";
 import { Link, NavLink } from "react-router-dom";
 
 function AsideMenu({ sections, imgTechnologie, technologieName }) {
-  const [arrow, setArrow] = useState('../../src/assets/arrowLeft.svg')
+  const [arrow, setArrow] = useState('/assets/arrowLeft.svg')
   const whiteText = getComputedStyle(document.documentElement).getPropertyValue(
     "--white-text"
   );
