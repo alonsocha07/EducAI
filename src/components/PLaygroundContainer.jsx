@@ -25,8 +25,8 @@ function PLaygroundContainer() {
   useEffect(() => {
     const loadDynamicComponent = async () => {
       try {
-        console.log('module', `./chatgpt/${slug}`);
-        const module = await import(`./chatgpt/${slug}`);
+        console.log('module', `/src/components/chatgpt/${slug}`);
+        const module = await import(`/src/components/chatgpt/${slug}`);
 
         const DynamicComponent = module.default;
 
