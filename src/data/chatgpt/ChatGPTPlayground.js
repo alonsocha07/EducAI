@@ -2,12 +2,12 @@ const chatgptPlayground = [];
 
 chatgptPlayground.push({
     title: 'Empecemos por definir qué es ChatGPT.',
-    slug: 'Introduccion',
+    slug: 'introduccion',
     prompt: 'Dame una descripción resumida de qué es ChatGPT'
 })
 chatgptPlayground.push({
     title: 'Precisión de la respuesta',
-    slug: 'Precision',
+    slug: 'precision',
     prompt: '¿Cuál es la fórmula de la equivalencia entre masa y energía? <span>Respuesta concisa sin explicación</span>',
     prompt2: '¿Cuál es la fórmula de la equivalencia entre masa y energía? <span>Respuesta resumida</span>',
     prompt3: '¿Cuál es la fórmula de la equivalencia entre masa y energía? <span>Respuesta de un párrafo</span>',

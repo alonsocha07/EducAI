@@ -29,13 +29,9 @@ function PLaygroundContainer() {
   useEffect(() => {
     const loadDynamicComponent = async () => {
       try {
-        let DynamicComponent
-        if (slug == 'Introduccion') {
-          DynamicComponent = Introduccion.default
-        }
-        if (slug == 'Precision') {
-          DynamicComponent = Precision.default
-        }
+        const module = await import(`./chatgpt/${slug}`);
+
+        const DynamicComponent = module.default;
 
         setDynamicComponent(<DynamicComponent />);
 
