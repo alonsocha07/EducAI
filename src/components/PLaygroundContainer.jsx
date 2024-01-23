@@ -6,7 +6,7 @@ import "../css/playground.css";
 import { useEffect, useState } from "react";
 
 const Introduccion = await import(`/src/components/chatgpt/Introduccion.jsx`);
-const Precision = await import(`/src/components/chatgpt/precision.jsx`);
+const Precision = await import(`/src/components/chatgpt/Precision.jsx`);
 
 
 function PLaygroundContainer() {
