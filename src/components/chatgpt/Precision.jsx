@@ -1,4 +1,4 @@
-function gpt_Precision() {
+function Precision() {
   return (
     <div>
         <p>Interesante... ¿Verdad?</p>
@@ -11,4 +11,4 @@ function gpt_Precision() {
   )
 }
 
-export default gpt_Precision
+export default Precision
