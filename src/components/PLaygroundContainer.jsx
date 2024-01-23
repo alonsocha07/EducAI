@@ -26,7 +26,7 @@ function PLaygroundContainer() {
     const loadDynamicComponent = async () => {
       try {
         console.log('module', `/src/components/chatgpt/${slug}`);
-        const module = await import(`/src/components/chatgpt/${slug}`);
+        const module = await import(`/src/components/chatgpt/${slug}.jsx`);
 
         const DynamicComponent = module.default;
 
