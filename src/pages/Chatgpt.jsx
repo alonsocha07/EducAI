@@ -6,7 +6,7 @@ function Chatgpt() {
     <>
       <div className="gridContainer">
 
-        <AsideMenu sections={sections} technologieName="Chat GPT" imgTechnologie="../../src/assets/openAILogo.svg">Soy aside</AsideMenu>
+        <AsideMenu sections={sections} technologieName="Chat GPT" imgTechnologie="/assets/openAILogo.svg">Soy aside</AsideMenu>
         <div className="sectionRight">
 
           <Outlet/>

@@ -19,10 +19,10 @@ function AsideMenu({ sections, imgTechnologie, technologieName }) {
 
       aMenu.classList.remove('MoveLeftMenu');
       aMenu.classList.add('MoveRightMenu');
-      setArrow('../../src/assets/arrowRight.svg')
+      setArrow('/assets/arrowRight.svg')
     } else {
       aMenu.classList.add('MoveLeftMenu');
-      setArrow('../../src/assets/arrowLeft.svg')
+      setArrow('/assets/arrowLeft.svg')
     }
     
   }
