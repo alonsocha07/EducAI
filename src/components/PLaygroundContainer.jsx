@@ -3,7 +3,7 @@ import { chatgptPlayground } from "../data/chatgpt/ChatGPTPlayground";
 import DOMPurify from 'dompurify';
 
 import "../css/playground.css";
-import { useEffect, useState } from "react";
+import { Suspense, lazy, useEffect, useState } from "react";
 
 function PLaygroundContainer() {
   const { slug } = useParams();
@@ -25,12 +25,18 @@ function PLaygroundContainer() {
   useEffect(() => {
     const loadDynamicComponent = async () => {
       try {
-        console.log('module', `/src/components/chatgpt/${slug}`);
-        const module = await import(`/src/components/chatgpt/${slug}.jsx`);
+        // const module = await import(`./chatgpt/${slug}`);
+        // const DynamicComponent = module.default;
+        // console.log('DC', <DynamicComponent/>);
+        
+        
+        // setDynamicComponent(<DynamicComponent />);
+        
+        
+        const module = await import(`./chatgpt/${slug}`);
+      const DynamicComponent = module.default;
 
-        const DynamicComponent = module.default;
-
-        setDynamicComponent(<DynamicComponent />);
+      setDynamicComponent(() => <DynamicComponent />);
 
         window.scrollTo({
           top: 0,
@@ -49,8 +55,10 @@ function PLaygroundContainer() {
     <>
       <div className="container">
         <h2 className="pg-title">{playground.title}</h2>
-
+        <Suspense fallback={<div>Loading...</div>}>
         {dynamicComponent}
+      </Suspense>
+       
 
         {playground.prompt && (
           <div>
