@@ -75,7 +75,7 @@ function PLaygroundContainer() {
 
               {playground.slug === 'introduccion' ? <Introduccion/> : null}
               {playground.slug === 'precision' ? <Precision/> : null}
-              {playground.slug === 'estructua' ? <Estructua/> : null}
+              {playground.slug === 'estructura' ? <Estructua/> : null}
               {playground.slug === 'limites' && <Limites />}
               {playground.slug === 'informacion_sensible' && <Informacion_sensible />}
               {playground.slug === 'tips_basicos' && <Tips_basicos />}
