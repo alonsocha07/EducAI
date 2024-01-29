@@ -6,7 +6,7 @@ import "../css/playground.css";
 
 import Precision from './chatgpt/Precision'
 import Introduccion from "./chatgpt/Introduccion"
-import Estructura from "./chatgpt/Estructura"
+import Estructura from "./chatgpt/estructura"
 
 
 function PLaygroundContainer() {
