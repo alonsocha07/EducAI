@@ -1,4 +1,4 @@
-function iniciar_sencillo() {
+function Iniciar_sencillo() {
   return (
     <div>
         <p className="p-definicion">Empezar simple, y después irle agregando más detalles, con el fin de comprobar
@@ -10,4 +10,4 @@ function iniciar_sencillo() {
   )
 }
 
-export default iniciar_sencillo
+export default Iniciar_sencillo

@@ -1,4 +1,4 @@
-function informacion_sensible() {
+function Informacion_sensible() {
   return (
     <div>
       <p>
@@ -56,4 +56,4 @@ function informacion_sensible() {
   );
 }
 
-export default informacion_sensible;
+export default Informacion_sensible;
