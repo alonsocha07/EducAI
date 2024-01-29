@@ -27,6 +27,8 @@ import Shots from "./chatgpt/Shots";
 function PLaygroundContainer() {
   const { slug } = useParams();
 
+console.log(import.meta.env.VITE_OPENAI_API_KEY );
+
   const playground = chatgptPlayground.find((post) => post.slug === slug);
   
   const clickBtn1 = (playground) => {
