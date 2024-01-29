@@ -1,4 +1,4 @@
-function Limites() {
+function limites() {
   return (
     <div>
       {" "}
@@ -51,4 +51,4 @@ function Limites() {
   );
 }
 
-export default Limites;
+export default limites;
