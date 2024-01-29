@@ -6,7 +6,7 @@ import "../css/playground.css";
 
 import Precision from './chatgpt/Precision'
 import Introduccion from "./chatgpt/Introduccion";
-import Estructura from "./chatgpt/Estructura";
+import Estructura from "../components/chatgpt/Estructura";
 import Limites from "./chatgpt/Limites";
 import Informacion_sensible from "./chatgpt/Informacion_sensible";
 import Tips_basicos from "./chatgpt/Tips_basicos";
