@@ -1,7 +1,7 @@
 function Estructura() {
     return (
       <div>
-        <p>La entrada en texto que reciben las inteligencias artificiales son llamadas "prompt". Para ChatGPT se puede
+        <p>La entrada en texto que reciben las inteligencias artificiales son llamadas prompt. Para ChatGPT se puede
                 usar una estructura sencilla para conseguir buenos resultados</p>
                 
         <br/>
