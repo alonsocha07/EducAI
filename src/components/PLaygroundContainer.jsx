@@ -5,6 +5,7 @@ import DOMPurify from 'dompurify';
 import "../css/playground.css";
 
 import Precision from './chatgpt/Precision'
+import Introduccion from "./chatgpt/Introduccion"
 import Estructura from "./chatgpt/Estructura"
 
 
@@ -57,7 +58,7 @@ function PLaygroundContainer() {
               
               {/*{dynamicComponent} The dynamic component would go here, but due to netlify inconveniences I decided to import all the components and show them depending on the slug*/}
 
-
+              {playground.slug == 'introduccion' ? <Introduccion/> : null}
               {playground.slug == 'precision' ? <Precision/> : null}
               {playground.slug == 'estructura' ? <Estructura/> : null}
               
