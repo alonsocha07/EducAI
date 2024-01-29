@@ -16,7 +16,7 @@ chatgptPlayground.push({
     b_prompt3: 'Extennso',
 })
 chatgptPlayground.push({
-    title: 'Estructura de un prompt?',
+    title: 'Estructura de un prompt',
     slug: 'estructura',
     prompt: `<span class="blue">Actúa como un experto en historia del arte,</span> <span
     class="green">compara y contrasta</span> las pinturas <span class="brown">“La Última Cena” de
