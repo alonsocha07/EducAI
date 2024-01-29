@@ -2,7 +2,7 @@ function estructura() {
     return (
         <div>
           <p>La entrada en texto que reciben las inteligencias artificiales son llamadas prompt. Para ChatGPT se puede
-                  usar una estructura sencilla para conseguir buenos resultados</p>
+                  usar una estructura sencilla para conseguir buenos resultados </p>
                   
           <br/>
               <ul>
