@@ -6,7 +6,7 @@ import "../css/playground.css";
 
 import Precision from './chatgpt/Precision'
 import Introduccion from "./chatgpt/Introduccion";
-import Estructura from "../components/chatgpt/Estructura";
+
 import Limites from "./chatgpt/Limites";
 import Informacion_sensible from "./chatgpt/Informacion_sensible";
 import Tips_basicos from "./chatgpt/Tips_basicos";
@@ -76,7 +76,7 @@ function PLaygroundContainer() {
 
               {playground.slug == 'introduccion' ? <Introduccion/> : null}
               {playground.slug == 'precision' ? <Precision/> : null}
-              {playground.slug === 'estructura' && <Estructura />}
+            
               {playground.slug === 'limites' && <Limites />}
               {playground.slug === 'informacion_sensible' && <Informacion_sensible />}
               {playground.slug === 'tips_basicos' && <Tips_basicos />}
