@@ -6,7 +6,7 @@ import "../css/playground.css";
 
 import Precision from './chatgpt/Precision'
 import Introduccion from "./chatgpt/Introduccion"
-
+import Estructura from "./chatgpt/Estructura"
 
 
 function PLaygroundContainer() {
@@ -60,6 +60,7 @@ function PLaygroundContainer() {
 
               {playground.slug == 'introduccion' ? <Introduccion/> : null}
               {playground.slug == 'precision' ? <Precision/> : null}
+              {playground.slug == 'estructura' ? <Estructura/> : null}
               
 
         {playground.prompt && (
