@@ -5,38 +5,42 @@ import DOMPurify from 'dompurify';
 import "../css/playground.css";
 import { Suspense, lazy, useEffect, useState } from "react";
 
+
+import Precision from './chatgpt/Precision'
+import Introduccion from "./chatgpt/Introduccion";
+
+
 function PLaygroundContainer() {
   const { slug } = useParams();
 
   const playground = chatgptPlayground.find((post) => post.slug === slug);
   const [dynamicComponent, setDynamicComponent] = useState(null);
 
-  const p = document.getElementById('prompt')
+  
   const clickBtn1 = (playground) => {
+    let p = document.getElementById('prompt')
     p.innerHTML = playground.prompt
   };
   const clickBtn2 = (playground) => {
+    let p = document.getElementById('prompt')
     p.innerHTML = playground.prompt2
   };
   const clickBtn3 = (playground) => {
+    let p = document.getElementById('prompt')
     p.innerHTML = playground.prompt3
   };
 
   useEffect(() => {
     const loadDynamicComponent = async () => {
       try {
-        // const module = await import(`./chatgpt/${slug}`);
-        // const DynamicComponent = module.default;
-        // console.log('DC', <DynamicComponent/>);
+      
+  //      module = lazy(()=> import(`./chatgpt/${slug}`))
+    //    setDynamicComponent(module);
         
-        
-        // setDynamicComponent(<DynamicComponent />);
-        
-        
-        const module = await import(`./chatgpt/${slug}`);
-      const DynamicComponent = module.default;
+      //const module = await import(`./chatgpt/${slug}.jsx`);
+      //const DynamicComponent = module.default;
 
-      setDynamicComponent(() => <DynamicComponent />);
+      //setDynamicComponent(() => <DynamicComponent />);
 
         window.scrollTo({
           top: 0,
@@ -53,16 +57,16 @@ function PLaygroundContainer() {
 
   return (
     <>
+    
       <div className="container">
         <h2 className="pg-title">{playground.title}</h2>
-        <Suspense fallback={<div>Loading...</div>}>
-        {dynamicComponent}
-      </Suspense>
-       
+
 
         {playground.prompt && (
           <div>
             <div className="playground-container">
+              {playground.slug == 'introduccion' ? <Introduccion/> : null}
+              {playground.slug == 'precision' ? <Precision/> : null}
               <div className="buttons-container">
                 {
                   playground.prompt2 && (
