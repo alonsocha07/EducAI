@@ -1,4 +1,4 @@
-function estructura() {
+function Estructura() {
     return (
         <div>
           <p>La entrada en texto que reciben las inteligencias artificiales son llamadas prompt. Para ChatGPT se puede
@@ -18,4 +18,4 @@ function estructura() {
       )
 }
 
-export default estructura
+export default Estructura
