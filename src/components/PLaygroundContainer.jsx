@@ -23,11 +23,15 @@ import Limitaciones_del_modelo from "./chatgpt/Limitaciones_del_modelo";
 import Supuestos from "./chatgpt/Supuestos";
 import Tecnica_promt_engineering from "./chatgpt/Tecnica_promt_engineering";
 import Shots from "./chatgpt/Shots";
+import { useEffect, useState } from "react";
+import { callChatGpt } from "../data/openAI_API";
 
 function PLaygroundContainer() {
+  const [isButtonDisabled, setButtonDisabled] = useState(false);
+  const [buttonText, setButtonText] = useState("Generar respuesta");
+  const [response, setResponse] = useState("(Respuesta de ChatGPT)");
+  
   const { slug } = useParams();
-
-console.log(import.meta.env.VITE_OPENAI_API_KEY );
 
   const playground = chatgptPlayground.find((post) => post.slug === slug);
   
@@ -43,6 +47,22 @@ console.log(import.meta.env.VITE_OPENAI_API_KEY );
     let p = document.getElementById('prompt')
     p.innerHTML = playground.prompt3
   };
+
+  const onClickButton = () => {
+    let p = document.getElementById('prompt')
+    callChatGpt(setButtonDisabled, setButtonText, setResponse, p.innerHTML);
+  };
+
+  useEffect(() => {
+
+    setResponse('(Respuesta de ChatGPT)');
+    
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+
+  }, [slug]);
 
   /* This use effect import dynamically components, but in netlify server doesn't works good so I import all and change it by the 
   useEffect(() => {
@@ -121,12 +141,16 @@ console.log(import.meta.env.VITE_OPENAI_API_KEY );
               </div>
               <div className="respuesta-container">
                 <p>
-                  (Respuesta de ChatGPT)
+                  {response}
                 </p>
               </div>
             </div>
-            <button className="botonGPT" id="botonDescripcionGPT">
-              Generar descripción
+            <button 
+              className="botonGPT" 
+              id="botonDescripcionGPT" 
+              onClick={onClickButton}
+              disabled={isButtonDisabled}>
+              {buttonText}
             </button>
           </div>
         )}

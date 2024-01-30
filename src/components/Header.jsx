@@ -35,19 +35,14 @@ function Header() {
 
 const routes = [];
 routes.push({
-  to: "/",
-  text: "Home",
-  private: false,
-});
-routes.push({
   to: "/chatgpt/introduccion",
   text: "Chat GPT",
   private: false,
 });
-routes.push({
+/*routes.push({
   to: "/dalle2",
   text: "Dall-E 2",
   private: true,
-});
+});*/
 
 export { Header };
